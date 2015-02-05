@@ -1,7 +1,5 @@
 package com.example.medmemory;
 
-import java.net.URI;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -65,9 +63,9 @@ public class MainActivity extends Activity {
 	public void gotopharms(View view){
 //    	Intent myintent = new Intent(this, Pharm.class);
 		Intent myintent = new Intent(Intent.ACTION_VIEW);
-		myintent.setData(Uri.parse("geo:0,0?q=nearest pharmacy"));
-		if(myintent.resolveActivity(getPackageManager()) != null)
-			startActivity(myintent);
+        myintent.setData(Uri.parse("geo:0,0?q=pharmacy"));
+        if (myintent.resolveActivity(getPackageManager()) != null)
+            startActivity(myintent);
 		else
 			Toast.makeText(this, "There is no Maps app on this device.", Toast.LENGTH_SHORT).show();
 	}
