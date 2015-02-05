@@ -1,28 +1,28 @@
 package com.example.medmemory;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.example.medmemory.adapter.MedicationAdapter;
 import com.example.medmemory.db.Database;
 import com.example.medmemory.model.Medication;
 
+import java.util.ArrayList;
+
 public class Meds extends Activity {
 
-	private static final int ADD_MED_REQUEST = 69; // the sex number
-	
-	ListView listView;
-	ArrayList<Medication> medications; // yeah its not plural f the police
-	MedicationAdapter adapter;
-	
-	@Override
+    private static final int ADD_MED_REQUEST = 69;
+
+    ListView listView;
+    ArrayList<Medication> medications;
+    MedicationAdapter adapter;
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.meds);
@@ -63,10 +63,10 @@ public class Meds extends Activity {
 	        // Re-retrieve all meds
 	        Database.context = this;
 	        medications = Database.getAllMedications();
-	        
-	        // Replace adapter it's not efficient but who cares
-	        adapter = new MedicationAdapter(this, R.layout.med_list_row, medications);
-	        listView.setAdapter(adapter);
+
+            // Replace adapter
+            adapter = new MedicationAdapter(this, R.layout.med_list_row, medications);
+            listView.setAdapter(adapter);
 		}
 	}
 	
