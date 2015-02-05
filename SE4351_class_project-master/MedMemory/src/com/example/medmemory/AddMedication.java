@@ -1,32 +1,16 @@
 package com.example.medmemory;
 
-import java.io.FileDescriptor;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Date;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import android.app.Activity;
 import android.app.AlarmManager;
-import android.app.AlertDialog;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
-import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
-import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -37,6 +21,13 @@ import android.widget.Toast;
 
 import com.example.medmemory.db.Database;
 import com.example.medmemory.model.Medication;
+
+import java.io.FileDescriptor;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Date;
+import java.util.Calendar;
 
 public class AddMedication extends Activity {
 
@@ -81,15 +72,6 @@ public class AddMedication extends Activity {
 			@Override
 			public void onClick(View v)
 			{
-				// Default data for testing purposes
-				if(medName.getText().length() == 0)
-					medName.setText("Aspirin");
-				if(dosage.getText().length() == 0)
-					dosage.setText("100mg");
-				if(pillCount.getText().length() == 0)
-					pillCount.setText("30");
-				if(notes.getText().length() == 0)
-					notes.setText("Take with food, do not take with orange juice.");
 				
 				// Debug log
 				System.out.println("====SAVING MED====");
