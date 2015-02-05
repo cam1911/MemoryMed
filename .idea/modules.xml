@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SE4351_class_project-master/MedMemory/MedMemory.iml" filepath="$PROJECT_DIR$/SE4351_class_project-master/MedMemory/MedMemory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MemoryMed.iml" filepath="$PROJECT_DIR$/MemoryMed.iml" />
+    </modules>
+  </component>
+</project>
+
