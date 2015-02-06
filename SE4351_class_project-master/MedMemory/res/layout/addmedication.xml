@@ -2,102 +2,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-      <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="8dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Medication Name"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-            
-            <EditText 
+
+            <EditText
                 android:id="@+id/med_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge" 
-                />
-            
-            <ImageView 
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
                 android:id="@+id/med_image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:scaleType="fitCenter"
-                />
+                android:scaleType="fitCenter" />
 
-            <Button 
+            <Button
                 android:id="@+id/select_image_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Select Image"
-                />
-            
-			<TextView
+                android:text="Select Image" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dosage"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-            
-            <EditText 
+
+            <EditText
                 android:id="@+id/med_dosage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                />
-            
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pill Count"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-            
-            <EditText 
+
+            <EditText
                 android:id="@+id/med_count"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:inputType="number"
-                />
+                android:inputType="number" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Reminder Time" />
 
             <TimePicker
                 android:id="@+id/timePicker"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:textAppearance="?android:attr/textAppearanceLarge" 
-                />
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-			<TextView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Notes"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                />
-            
-            <EditText 
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
                 android:id="@+id/med_notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:inputType="textMultiLine"
-                />
-            
+                android:inputType="textMultiLine" />
+
             <Button
                 android:id="@+id/save_med_btn"
                 android:layout_width="match_parent"
