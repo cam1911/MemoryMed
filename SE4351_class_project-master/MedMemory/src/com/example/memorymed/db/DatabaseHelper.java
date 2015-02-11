@@ -1,4 +1,4 @@
-package com.example.medmemory.db;
+package com.example.memorymed.db;
 
 import java.io.*;
 import java.text.*;

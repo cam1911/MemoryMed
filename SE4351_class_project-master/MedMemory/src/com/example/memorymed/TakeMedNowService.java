@@ -1,8 +1,8 @@
-package com.example.medmemory;
+package com.example.memorymed;
 
 import java.util.Calendar;
 
-import com.example.medmemory.db.Database;
+import com.example.memorymed.db.Database;
 
 import android.app.AlarmManager;
 import android.app.NotificationManager;

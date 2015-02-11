@@ -1,4 +1,4 @@
-package com.example.medmemory;
+package com.example.memorymed;
 
 import java.util.Calendar;
 
