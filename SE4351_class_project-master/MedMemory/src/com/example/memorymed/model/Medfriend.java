@@ -1,4 +1,4 @@
-package com.example.medmemory.model;
+package com.example.memorymed.model;
 
 /**
  * Created by Cameron on 2/5/2015.

@@ -1,4 +1,4 @@
-package com.example.medmemory.adapter;
+package com.example.memorymed.adapter;
 
 import java.util.ArrayList;
 
@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.medmemory.R;
-import com.example.medmemory.model.Medication;
+import com.example.memorymed.R;
+import com.example.memorymed.model.Medication;
 
 public class MedicationAdapter extends ArrayAdapter<Medication>
 {

@@ -1,13 +1,14 @@
-package com.example.medmemory.db;
+package com.example.memorymed.db;
 
 import java.io.IOException;
 import java.text.*;
 import java.util.*;
+
 import android.content.*;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 
-import com.example.medmemory.model.Medication;
+import com.example.memorymed.model.Medication;
 
 public class Database {
 	/**

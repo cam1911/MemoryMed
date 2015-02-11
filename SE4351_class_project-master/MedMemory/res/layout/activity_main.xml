@@ -27,7 +27,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/cal"
                 style="?android:attr/borderlessButtonStyle"
-                android:onClick="gotorefills" />
+                android:onClick="gotocal" />
 
             <TextView
                 android:id="@+id/textView2"

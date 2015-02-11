@@ -1,11 +1,11 @@
-package com.example.medmemory.model;
+package com.example.memorymed.model;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.util.Date;
 import java.util.Locale;
 
-import com.example.medmemory.db.Database;
+import com.example.memorymed.db.Database;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

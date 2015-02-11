@@ -1,4 +1,4 @@
-package com.example.medmemory;
+package com.example.memorymed;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
-import com.example.medmemory.adapter.MedicationAdapter;
-import com.example.medmemory.db.Database;
-import com.example.medmemory.model.Medication;
+import com.example.memorymed.adapter.MedicationAdapter;
+import com.example.memorymed.db.Database;
+import com.example.memorymed.model.Medication;
 
 import java.util.ArrayList;
 

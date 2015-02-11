@@ -1,4 +1,4 @@
-package com.example.medmemory.model;
+package com.example.memorymed.model;
 
 import java.sql.Time;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.example.medmemory;
+package com.example.memorymed;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -19,8 +19,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.example.medmemory.db.Database;
-import com.example.medmemory.model.Medication;
+import com.example.memorymed.db.Database;
+import com.example.memorymed.model.Medication;
 
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;

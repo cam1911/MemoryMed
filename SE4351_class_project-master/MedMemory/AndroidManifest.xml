@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.medmemory"
+    package="com.example.memorymed"
     android:versionCode="1"
     android:versionName="1.0">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
 
 
     <uses-sdk
@@ -27,6 +29,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="Calendar"
+            android:parentActivityName=".MainActivity"></activity>
+        
+        <activity
             android:name="Doctor"
             android:parentActivityName=".MainActivity"></activity>
         <activity
@@ -38,6 +44,9 @@
         <activity
             android:name="AddMedication"
             android:parentActivityName=".Meds"></activity>
+        <activity 
+            android:name="CalendarEventActivity"
+            android:parentActivityName=".Calendar"></activity>
 
         <service android:name="NotifyService"></service>
         <service android:name="TakeMedNowService"></service>
