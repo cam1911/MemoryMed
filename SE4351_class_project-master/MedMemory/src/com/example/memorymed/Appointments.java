@@ -6,16 +6,19 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 
-public class Calendar extends Activity
+public class Appointments extends Activity
 {
-	private String calendar;
+	//private String calendar;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.calendar);
+		setContentView(R.layout.appointments);
 		
-		boolean firstTime = this.getIntent().getExtras().getBoolean("isFirstTime");
+		
+		
+		/*boolean firstTime = this.getIntent().getExtras().getBoolean("isFirstTime");
 		
 		if(firstTime)
 		{
@@ -26,6 +29,7 @@ public class Calendar extends Activity
 		 * Will read in settings asynchronous to first time dialog. Thus, reads in
 		 * settings if it's not the first time, or sets defaults if it is.
 		 */
+		/*
 		SharedPreferences settings = getSharedPreferences(MainActivity.PREF_NAME, 0);
 		calendar = settings.getString("selectedCalendar", "None");
 		
@@ -33,12 +37,14 @@ public class Calendar extends Activity
 		if(!calendar.equals("None"))
 		{
 			
-		}
+		}*/
 	}
 	
 	/*
 	 * Prompts the user for their choice of calendar, or use app's local calendar
 	 */
+	
+	/*
 	private void promptCalendarChoice() {
 		CalendarSelectionDialog dialog = new CalendarSelectionDialog();
 		dialog.setCancelable(false);
@@ -57,8 +63,11 @@ public class Calendar extends Activity
 	/*
 	 * This refresh the list of events. Called during onCreate and whenever the user edits, adds, or deletes events. 
 	 */
+	
+	/*
 	private void populateEvents()
 	{
 		
 	}
+	*/
 }

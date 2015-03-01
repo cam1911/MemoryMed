@@ -21,15 +21,15 @@ public class CalendarSelectionDialog extends DialogFragment
 			@Override
 			public void onClick(DialogInterface dialog, int which)
 			{
-				Calendar calendar;
+				Appointments calendar;
 				SharedPreferences settings = getActivity().getSharedPreferences(MainActivity.PREF_NAME, 0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putString("", calendars[which]);
 				editor.commit();
 				try
 				{
-					calendar = (Calendar) getActivity();
-					calendar.setCalendar(calendars[which]);
+					calendar = (Appointments) getActivity();
+					//calendar.setCalendar(calendars[which]);
 				}
 				catch(ClassCastException e)
 				{
