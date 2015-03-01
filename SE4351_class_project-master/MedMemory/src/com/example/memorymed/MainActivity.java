@@ -64,8 +64,8 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	public void gotocal(View view) {
-		Intent myintent = new Intent(this, Calendar.class);
+	public void gotoappointments(View view) {
+		Intent myintent = new Intent(this, Appointments.class);
 		myintent.putExtra("isFirstTime", isFirstTime);
 		startActivity(myintent);
 	}

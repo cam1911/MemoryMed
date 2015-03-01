@@ -11,7 +11,7 @@
 
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
     <application
@@ -46,7 +46,7 @@
             android:parentActivityName=".Meds"></activity>
         <activity 
             android:name="CalendarEventActivity"
-            android:parentActivityName=".Calendar"></activity>
+            android:parentActivityName=".Appointments"></activity>
 
         <service android:name="NotifyService"></service>
         <service android:name="TakeMedNowService"></service>
